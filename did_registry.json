@@ -1,0 +1,42 @@
+{
+    "did:key:8c87811d-c5f9-420d-8c10-18205c2821ef": {
+        "did_document": {
+            "id": "did:key:8c87811d-c5f9-420d-8c10-18205c2821ef",
+            "controller": "IM Provider",
+            "name": "Whatsapp",
+            "purpose": "IM Provider identity",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsPrJIIpdP80ct7FJ/swf\nN/Ymld0tX7ofF9s6nMAOkzV9S0dsDHGUWfNZotWki1t0UqwEz5xULch8STioKRoc\nGYSoqIdzYdJ6f8hqhsxFoyS1gyVaADJfIwXgiqA1Zs/7pybFQp2mjt9Ym0p4MVSS\nONoQ86gFtx7YO98sJQdMGqyhyuRBetq7tWdnggdljZpR/AGLiOYOs9KEFTJESs3g\nPWfMFkd+GGhGMl5M6ymjjx11wdox0/8X9Bqm+mAa9u0b0Tbk9JopNh9I7tF0Bjm6\nO/BUDUS6CJH+CPOBd2RHgDZ8biDymuskzi64m9ffHnC7JVCh4V+c19aMR9KH1zdb\nXQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsPrJIIpdP80ct7FJ/swf\nN/Ymld0tX7ofF9s6nMAOkzV9S0dsDHGUWfNZotWki1t0UqwEz5xULch8STioKRoc\nGYSoqIdzYdJ6f8hqhsxFoyS1gyVaADJfIwXgiqA1Zs/7pybFQp2mjt9Ym0p4MVSS\nONoQ86gFtx7YO98sJQdMGqyhyuRBetq7tWdnggdljZpR/AGLiOYOs9KEFTJESs3g\nPWfMFkd+GGhGMl5M6ymjjx11wdox0/8X9Bqm+mAa9u0b0Tbk9JopNh9I7tF0Bjm6\nO/BUDUS6CJH+CPOBd2RHgDZ8biDymuskzi64m9ffHnC7JVCh4V+c19aMR9KH1zdb\nXQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:69b083b4-04a1-431d-8409-d6d3fb4fb3db": {
+        "did_document": {
+            "id": "did:key:69b083b4-04a1-431d-8409-d6d3fb4fb3db",
+            "controller": "End User",
+            "name": "Cesar Villegas",
+            "purpose": "End User Identity",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgPo83TZeQkzlkHJwckFc\n92i5r2OhTlGe5QY9/ook4dvN/udQaIHjiKoY1SIHehX+4Yh1nj1/wgS9Snbholhq\njIhuIyxBrX9Jw5Q37Ledc+Ktx2XfVC94awosw89BUWZfl8fybgdKWdVkXK/7aAdU\nqboYgpUAN+Q/Mt/bETovVtyaMIwCnA4vxUbDz9DfhIg/rxRfJxaqBzFXs5I6AdhP\nNbJXD89hbc5fPEHTv/D99tJO6IBDHBhryoG4esqTMqnNw5imaMuVSvUazi0PckY7\nqPF8QRU3nfLaCtGH3WEj5Jo2SToQaZ3BRCF/0S+i5omfyJpuuck83SOGTTSB11NA\ndQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgPo83TZeQkzlkHJwckFc\n92i5r2OhTlGe5QY9/ook4dvN/udQaIHjiKoY1SIHehX+4Yh1nj1/wgS9Snbholhq\njIhuIyxBrX9Jw5Q37Ledc+Ktx2XfVC94awosw89BUWZfl8fybgdKWdVkXK/7aAdU\nqboYgpUAN+Q/Mt/bETovVtyaMIwCnA4vxUbDz9DfhIg/rxRfJxaqBzFXs5I6AdhP\nNbJXD89hbc5fPEHTv/D99tJO6IBDHBhryoG4esqTMqnNw5imaMuVSvUazi0PckY7\nqPF8QRU3nfLaCtGH3WEj5Jo2SToQaZ3BRCF/0S+i5omfyJpuuck83SOGTTSB11NA\ndQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:f5b32584-87cd-414d-9319-37c52bc674a6": {
+        "did_document": {
+            "id": "did:key:f5b32584-87cd-414d-9319-37c52bc674a6",
+            "controller": "Issuer",
+            "name": "T-Systems Mexico",
+            "purpose": "Issuer identity",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoXlI4/XjODhg7RtanXs+\nmQ2xcQlPxilP5pqc/48tzvu1j457LmeQkHg0CIxOW/UXf+QAWxiOI6K6JaIasYT/\nvs8gszJ8pm/KVIqO2Ifl8ZlRLqDDBOIa4NtO/IIqFseEan3erGGRzeFFyJcU2UF3\nXeMnxtS70tP3G1WtwwXWhQLL3K2Cl+o3ypc9q9+7vDleNfPwVxw1kkAA0iAFXY5r\nCDuJJU1fLT6e8tDVOnux9KJAQ2fy9ARjvbmz2T4059Y9L2L7MwQddJYjcKakeTws\nGB/Gse1mgxJmxMLowahLoLDEfZe+fSAqmy39C2WTdVzmkhWaOwjfoZBSfY06k2Vn\nFwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoXlI4/XjODhg7RtanXs+\nmQ2xcQlPxilP5pqc/48tzvu1j457LmeQkHg0CIxOW/UXf+QAWxiOI6K6JaIasYT/\nvs8gszJ8pm/KVIqO2Ifl8ZlRLqDDBOIa4NtO/IIqFseEan3erGGRzeFFyJcU2UF3\nXeMnxtS70tP3G1WtwwXWhQLL3K2Cl+o3ypc9q9+7vDleNfPwVxw1kkAA0iAFXY5r\nCDuJJU1fLT6e8tDVOnux9KJAQ2fy9ARjvbmz2T4059Y9L2L7MwQddJYjcKakeTws\nGB/Gse1mgxJmxMLowahLoLDEfZe+fSAqmy39C2WTdVzmkhWaOwjfoZBSfY06k2Vn\nFwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:977750b0-bdfa-4b16-adb5-04706e657be2": {
+        "did_document": {
+            "id": "did:key:977750b0-bdfa-4b16-adb5-04706e657be2",
+            "controller": "IM Client",
+            "name": "Cesars Wallet",
+            "purpose": "Wallet identity",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAydkI0xlSkOq0FBt51F\nT+doFxmgGXf3P4um/rQ6FvKn6lfid/jwGDbwt0R2/eeJKxfe+hDb1kZ5tKiN8+TG\nI51VBtQ7Q3HVeOCv+sTxUy2L7BydZl6e2LqTz2NEcDiUCPmeXUXWDQnlFH10FrH3\nCzYwXiyoGmjVFUZHzPgyUmMmYyg0rhFk1Y2tvRgl8aV46nuV+M08exJaE25Za2VD\nAOeHIEJmB0kw8eenCXg+6JnINNtu8pxqPBtHGxZ/RXa2P1AjRfAnaOr0QmTV4qBF\nTbkOcEHwb8ryViA6PJU3dmTBJIhgLDAYQjQYRciK2j2qv1JnqKGO9vSsO8qF4gg3\nTQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAydkI0xlSkOq0FBt51F\nT+doFxmgGXf3P4um/rQ6FvKn6lfid/jwGDbwt0R2/eeJKxfe+hDb1kZ5tKiN8+TG\nI51VBtQ7Q3HVeOCv+sTxUy2L7BydZl6e2LqTz2NEcDiUCPmeXUXWDQnlFH10FrH3\nCzYwXiyoGmjVFUZHzPgyUmMmYyg0rhFk1Y2tvRgl8aV46nuV+M08exJaE25Za2VD\nAOeHIEJmB0kw8eenCXg+6JnINNtu8pxqPBtHGxZ/RXa2P1AjRfAnaOr0QmTV4qBF\nTbkOcEHwb8ryViA6PJU3dmTBJIhgLDAYQjQYRciK2j2qv1JnqKGO9vSsO8qF4gg3\nTQIDAQAB\n-----END PUBLIC KEY-----\n"
+    }
+}
