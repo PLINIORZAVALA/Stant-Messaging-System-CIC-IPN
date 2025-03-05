@@ -38,5 +38,15 @@
             "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAydkI0xlSkOq0FBt51F\nT+doFxmgGXf3P4um/rQ6FvKn6lfid/jwGDbwt0R2/eeJKxfe+hDb1kZ5tKiN8+TG\nI51VBtQ7Q3HVeOCv+sTxUy2L7BydZl6e2LqTz2NEcDiUCPmeXUXWDQnlFH10FrH3\nCzYwXiyoGmjVFUZHzPgyUmMmYyg0rhFk1Y2tvRgl8aV46nuV+M08exJaE25Za2VD\nAOeHIEJmB0kw8eenCXg+6JnINNtu8pxqPBtHGxZ/RXa2P1AjRfAnaOr0QmTV4qBF\nTbkOcEHwb8ryViA6PJU3dmTBJIhgLDAYQjQYRciK2j2qv1JnqKGO9vSsO8qF4gg3\nTQIDAQAB\n-----END PUBLIC KEY-----\n"
         },
         "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuAydkI0xlSkOq0FBt51F\nT+doFxmgGXf3P4um/rQ6FvKn6lfid/jwGDbwt0R2/eeJKxfe+hDb1kZ5tKiN8+TG\nI51VBtQ7Q3HVeOCv+sTxUy2L7BydZl6e2LqTz2NEcDiUCPmeXUXWDQnlFH10FrH3\nCzYwXiyoGmjVFUZHzPgyUmMmYyg0rhFk1Y2tvRgl8aV46nuV+M08exJaE25Za2VD\nAOeHIEJmB0kw8eenCXg+6JnINNtu8pxqPBtHGxZ/RXa2P1AjRfAnaOr0QmTV4qBF\nTbkOcEHwb8ryViA6PJU3dmTBJIhgLDAYQjQYRciK2j2qv1JnqKGO9vSsO8qF4gg3\nTQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:26b09a8a-e486-48bd-9032-992a6a0d5d25": {
+        "did_document": {
+            "id": "did:key:26b09a8a-e486-48bd-9032-992a6a0d5d25",
+            "controller": "Example Corp",
+            "name": "John Doe",
+            "purpose": "Authentication",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5HuQo6KFXvyzLDCr5FY9\nCOAOSu+I2ZU3Yg6mJ+YAvU6K0XNttsSrdruntVgw5QB24I16iGR8BGfkWV/14Pz6\nduOGWGWVrmZ+J18F6Vwp3zI/0VGn09vPzS5gINgqBHUyVQpJPSl+Fntljw/XGPVt\nhaCr2hAZwI+ew9CHz3wtxSyHc6SaOp3tbMcWJ5/fEjijqAjljGUlnzrViLj3onoL\nabJ91GA87hLSMle/oX8nUNQoPe6yik4+e80i1Q81MLZCF3q38hMKO9THc/wpIV89\nIfHm9/LRxsUk+LlrFmBCUFrJ5ney2lCBbDJcPn2pT7gKcEvz7G4AgiueXjTN6ain\nWwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5HuQo6KFXvyzLDCr5FY9\nCOAOSu+I2ZU3Yg6mJ+YAvU6K0XNttsSrdruntVgw5QB24I16iGR8BGfkWV/14Pz6\nduOGWGWVrmZ+J18F6Vwp3zI/0VGn09vPzS5gINgqBHUyVQpJPSl+Fntljw/XGPVt\nhaCr2hAZwI+ew9CHz3wtxSyHc6SaOp3tbMcWJ5/fEjijqAjljGUlnzrViLj3onoL\nabJ91GA87hLSMle/oX8nUNQoPe6yik4+e80i1Q81MLZCF3q38hMKO9THc/wpIV89\nIfHm9/LRxsUk+LlrFmBCUFrJ5ney2lCBbDJcPn2pT7gKcEvz7G4AgiueXjTN6ain\nWwIDAQAB\n-----END PUBLIC KEY-----\n"
     }
 }
