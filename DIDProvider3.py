@@ -54,8 +54,7 @@ def generate_key_pair():
 @app.route('/CreateDID', methods=['POST'])
 def create_did():
     """
-    Crea un DID, genera una clave privada RSA y verifica que la clave pública
-    proporcionada coincida con la clave pública en el archivo miclavepublica.pem.
+    Crea un DID, genera una clave privada RSA y usa una clave pública proporcionada.
     """
     data = request.json
 
@@ -63,17 +62,6 @@ def create_did():
     required_fields = ['entity', 'name', 'purpose', 'publicKey']
     if not all(field in data for field in required_fields):
         return jsonify({"error": "Missing required fields"}), 400
-
-    # Leer la clave pública desde el archivo miclavepublica.pem
-    try:
-        with open("miclavepublica.pem", "r") as public_key_file:
-            stored_public_pem = public_key_file.read().strip()  # Eliminar espacios y saltos de línea
-    except FileNotFoundError:
-        return jsonify({"error": "El archivo miclavepublica.pem no existe"}), 400
-
-    # Comparar la clave pública enviada con la clave pública almacenada
-    if data['publicKey'].strip() != stored_public_pem:
-        return jsonify({"error": "La clave pública no coincide con la clave almacenada"}), 400
 
     # Generar el DID y la clave privada RSA
     did = generate_did()
