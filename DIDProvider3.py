@@ -54,7 +54,8 @@ def generate_key_pair():
 @app.route('/CreateDID', methods=['POST'])
 def create_did():
     """
-    Crea un DID, genera una clave privada RSA y usa una clave pública proporcionada.
+    Crea un DID usando una clave pública proporcionada en la petición.
+    La clave privada se genera previamente con OpenSSL y no se maneja en este código.
     """
     data = request.json
 
@@ -63,9 +64,8 @@ def create_did():
     if not all(field in data for field in required_fields):
         return jsonify({"error": "Missing required fields"}), 400
 
-    # Generar el DID y la clave privada RSA
+    # Generar el DID
     did = generate_did()
-    private_pem = generate_key_pair()
 
     # Usar la clave pública proporcionada en la petición
     public_pem = data['publicKey']
@@ -78,19 +78,17 @@ def create_did():
         "publicKey": public_pem
     }
 
-    # Almacenar solo la clave pública
+    # Almacenar el DID Document y la clave pública en el registro
     did_registry[did] = {
         "did_document": did_document,
-        "public_key": public_pem
+        "public_key": public_pem  # Almacenar la clave pública por separado
     }
 
     save_registry()
 
     return jsonify({
         "DID": did,
-        "DID_Document": did_document,
-        "PublicKey": public_pem,
-        "PrivateKey": private_pem  # Se envía al usuario, pero NO se almacena en el servidor
+        "DID_Document": did_document
     }), 201
 
 @app.route('/VerifyDID', methods=['GET'])
