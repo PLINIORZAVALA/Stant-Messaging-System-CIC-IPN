@@ -48,5 +48,65 @@
             "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5HuQo6KFXvyzLDCr5FY9\nCOAOSu+I2ZU3Yg6mJ+YAvU6K0XNttsSrdruntVgw5QB24I16iGR8BGfkWV/14Pz6\nduOGWGWVrmZ+J18F6Vwp3zI/0VGn09vPzS5gINgqBHUyVQpJPSl+Fntljw/XGPVt\nhaCr2hAZwI+ew9CHz3wtxSyHc6SaOp3tbMcWJ5/fEjijqAjljGUlnzrViLj3onoL\nabJ91GA87hLSMle/oX8nUNQoPe6yik4+e80i1Q81MLZCF3q38hMKO9THc/wpIV89\nIfHm9/LRxsUk+LlrFmBCUFrJ5ney2lCBbDJcPn2pT7gKcEvz7G4AgiueXjTN6ain\nWwIDAQAB\n-----END PUBLIC KEY-----\n"
         },
         "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5HuQo6KFXvyzLDCr5FY9\nCOAOSu+I2ZU3Yg6mJ+YAvU6K0XNttsSrdruntVgw5QB24I16iGR8BGfkWV/14Pz6\nduOGWGWVrmZ+J18F6Vwp3zI/0VGn09vPzS5gINgqBHUyVQpJPSl+Fntljw/XGPVt\nhaCr2hAZwI+ew9CHz3wtxSyHc6SaOp3tbMcWJ5/fEjijqAjljGUlnzrViLj3onoL\nabJ91GA87hLSMle/oX8nUNQoPe6yik4+e80i1Q81MLZCF3q38hMKO9THc/wpIV89\nIfHm9/LRxsUk+LlrFmBCUFrJ5ney2lCBbDJcPn2pT7gKcEvz7G4AgiueXjTN6ain\nWwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:2d510638-8a0d-4162-90b3-a33532f5d6d2": {
+        "did_document": {
+            "id": "did:key:2d510638-8a0d-4162-90b3-a33532f5d6d2",
+            "controller": "Example Corp",
+            "name": "John Doe",
+            "purpose": "Authentication",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7YmxV1tCJWZBpkkXyW9Z\nGRQhOBQaa/2zh1QXfimB/afacLTo3uzuU+Fo0w/OnhdugbCzA94aen9VT+SMtnjI\nw8kba0REDrg32i87kx9qWPh8QoGngHOZR3WxUXvEgK5/gWg22iSdiMIAn/S+7RVq\n81XFCh4xXRNpri6mbxF9lqO0za0mH/B5FQyCY7qCB8/T0P+x98G6QgJNrYr/No8H\nG0ky6OsTzyfNNp85czcKVEjKRyfao/oaaZqd5u2I4IodBnBqMllbx++Dt/V0xbV7\nll/qHgb3uyqqf752nEYHTt945ZocGFWsR3XzKP2Q2Y4vydCdbr9Y1v/wBVOHF/QH\nbwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7YmxV1tCJWZBpkkXyW9Z\nGRQhOBQaa/2zh1QXfimB/afacLTo3uzuU+Fo0w/OnhdugbCzA94aen9VT+SMtnjI\nw8kba0REDrg32i87kx9qWPh8QoGngHOZR3WxUXvEgK5/gWg22iSdiMIAn/S+7RVq\n81XFCh4xXRNpri6mbxF9lqO0za0mH/B5FQyCY7qCB8/T0P+x98G6QgJNrYr/No8H\nG0ky6OsTzyfNNp85czcKVEjKRyfao/oaaZqd5u2I4IodBnBqMllbx++Dt/V0xbV7\nll/qHgb3uyqqf752nEYHTt945ZocGFWsR3XzKP2Q2Y4vydCdbr9Y1v/wBVOHF/QH\nbwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:1fd37aaa-b48a-4206-a9b6-a88bcccd587c": {
+        "did_document": {
+            "id": "did:key:1fd37aaa-b48a-4206-a9b6-a88bcccd587c",
+            "controller": "Example Corp",
+            "name": "John Doe",
+            "purpose": "Authentication",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjPr6KFHgRR2Q8nckNlRk\nqlCT9eXuyhicBvgKN5auywMKg7GJfLuQqhtjn4yBiJF42o2P5TSK3UzeHc9QdyDP\nr65P0n/gs9dyiJeK5K5xqrgIxV0YO8dn2inW8MmjJGg7PZvH6IwYWnHt+8Emy5XF\nTlnXskmP9Fl8wa7NZlgZTj6s358SHrPLle2KpT1P8+vuZDbTMML0nr1oeZzK1LS9\nk/SvOxEcCaipcubLZLR6PKg+mpZjWaeE1+yBS+/XErBAU1M7umRRHPfC7lbwO2n5\nYrKocKjgIcbBy/CreWxzZ9/IrYiL2Y7ChKCepl/v5yEWVjocHEwsZshhEAQs0YUk\nKwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjPr6KFHgRR2Q8nckNlRk\nqlCT9eXuyhicBvgKN5auywMKg7GJfLuQqhtjn4yBiJF42o2P5TSK3UzeHc9QdyDP\nr65P0n/gs9dyiJeK5K5xqrgIxV0YO8dn2inW8MmjJGg7PZvH6IwYWnHt+8Emy5XF\nTlnXskmP9Fl8wa7NZlgZTj6s358SHrPLle2KpT1P8+vuZDbTMML0nr1oeZzK1LS9\nk/SvOxEcCaipcubLZLR6PKg+mpZjWaeE1+yBS+/XErBAU1M7umRRHPfC7lbwO2n5\nYrKocKjgIcbBy/CreWxzZ9/IrYiL2Y7ChKCepl/v5yEWVjocHEwsZshhEAQs0YUk\nKwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:e32eec80-fa5e-43e9-8b4f-f3ec05b30aa5": {
+        "did_document": {
+            "id": "did:key:e32eec80-fa5e-43e9-8b4f-f3ec05b30aa5",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0MrDGSbKsLPwc8/OyWH8\nlC+nq5Xu7Le4c3rhswYKU5uLYvHrzmSYMKnycEioAGVKdnV8E7lW+lFFgf9dUavV\n6jEkxHX2wNN+3+OpYANNZGFARbP93gtAEnsfGVXCAFyKgrQ9d2YKPArkBgX4ExMZ\nYsgkw7mJfVrZWhBUX9AUfUgqa78z5V9sRl9458H4kiytrsUNWX9/1QSy6o3f39k4\nHFgPIVPsHIDhzslHakykBBSzC95CDUKuajR60zoCdaafY3KcQw0NB2eyCVJZ21Tb\nnSYMXxEmge1tLuk5IxTGA4Jv6zdBEgvzeZogKVoSW3JUt2QOB5zQDnTRClZxECvY\nAQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0MrDGSbKsLPwc8/OyWH8\nlC+nq5Xu7Le4c3rhswYKU5uLYvHrzmSYMKnycEioAGVKdnV8E7lW+lFFgf9dUavV\n6jEkxHX2wNN+3+OpYANNZGFARbP93gtAEnsfGVXCAFyKgrQ9d2YKPArkBgX4ExMZ\nYsgkw7mJfVrZWhBUX9AUfUgqa78z5V9sRl9458H4kiytrsUNWX9/1QSy6o3f39k4\nHFgPIVPsHIDhzslHakykBBSzC95CDUKuajR60zoCdaafY3KcQw0NB2eyCVJZ21Tb\nnSYMXxEmge1tLuk5IxTGA4Jv6zdBEgvzeZogKVoSW3JUt2QOB5zQDnTRClZxECvY\nAQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:f9c6e828-371d-4826-b018-48327e99953d": {
+        "did_document": {
+            "id": "did:key:f9c6e828-371d-4826-b018-48327e99953d",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoEXp8/86oLvwOFdFFeh/\nJcFh/sMPbu5Y6xgXmO/k9P+nAnf5NuxBCWEJvwwcHO7C0vswDegd7hVjLPMSDWMh\n8onCUFVMo4Ur9SPBGJ25gPkKemI5mJVqvK40Wg5tykwxjjh7G9TKysF5Cf6Ezfqh\nLFNIHtIKxSQZ92WN/lekV/fghYNs20ASz+zIX0d9g4sbE5HmUWcw37xNc/OBFAFv\nABK6+NZibbkM+JvegbbPVZ5LxPLx8lmutAmZUaM0sUcGIgh8IGaVu5XslHad/wHj\npimZoCZ0PpeSjGzCuizBj5ySr7K/08VV79sQr3cvJrKU1Ks1DzF9X9Bp5nwITbJi\nNQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoEXp8/86oLvwOFdFFeh/\nJcFh/sMPbu5Y6xgXmO/k9P+nAnf5NuxBCWEJvwwcHO7C0vswDegd7hVjLPMSDWMh\n8onCUFVMo4Ur9SPBGJ25gPkKemI5mJVqvK40Wg5tykwxjjh7G9TKysF5Cf6Ezfqh\nLFNIHtIKxSQZ92WN/lekV/fghYNs20ASz+zIX0d9g4sbE5HmUWcw37xNc/OBFAFv\nABK6+NZibbkM+JvegbbPVZ5LxPLx8lmutAmZUaM0sUcGIgh8IGaVu5XslHad/wHj\npimZoCZ0PpeSjGzCuizBj5ySr7K/08VV79sQr3cvJrKU1Ks1DzF9X9Bp5nwITbJi\nNQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:cc52ff46-ede9-49a3-8d97-f67d299253d7": {
+        "did_document": {
+            "id": "did:key:cc52ff46-ede9-49a3-8d97-f67d299253d7",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5cdrmRuJ092HvZFLOclp\nmIQPa3kdg5UMQpUbpYrTqMScfhYQCKW5no0plZWPCREz1QuOWOZlSBznjcr9mex6\nW2WTirtR16cB+aJCGPynBifAqK22TbSPlDLbegd+F4Vk+nCE33NkrZjpX7vxzGVG\nI9wRRqbZh/9yil7q+PZbl1WhChffj+TINJezWeuFMBFZqSV60gPtRM/sEY0Ri6tA\niWOLNBYG+glt2MEbMKdMpSmcwMay05CYRP614r7Yizrb0OaP25YRmwAyRBFqphd/\nksOJuqg0tFsEoTHG1T90yxqhJAT+lr3pQkIT63tLQkb/V4QapSXVuOw53HRdeD3r\nSwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5cdrmRuJ092HvZFLOclp\nmIQPa3kdg5UMQpUbpYrTqMScfhYQCKW5no0plZWPCREz1QuOWOZlSBznjcr9mex6\nW2WTirtR16cB+aJCGPynBifAqK22TbSPlDLbegd+F4Vk+nCE33NkrZjpX7vxzGVG\nI9wRRqbZh/9yil7q+PZbl1WhChffj+TINJezWeuFMBFZqSV60gPtRM/sEY0Ri6tA\niWOLNBYG+glt2MEbMKdMpSmcwMay05CYRP614r7Yizrb0OaP25YRmwAyRBFqphd/\nksOJuqg0tFsEoTHG1T90yxqhJAT+lr3pQkIT63tLQkb/V4QapSXVuOw53HRdeD3r\nSwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:594189dd-216c-49dc-aa9e-f23252b844fd": {
+        "did_document": {
+            "id": "did:key:594189dd-216c-49dc-aa9e-f23252b844fd",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2L77Rv6h3YnscpHtu4S\nRv5mbRzvJE1tg2WXp8ARpLrY4sXTUsn5CYiZT/BuXlxSB4DW5i78nzvRHjDvOWwH\n3UnYKFonGqOarIXylnWnTy2P2ZngB3UluYajRqoSwj+MboIizGSFIWua/BxKnG1C\nDkJP2blBPjoU8GQ072kC6AsyUc1wyJr2yuBgr78nnuPjWp2bqZrAja8unT7/GaNW\nOjhfR99KKtneE7733L0vPFXdwCLWlJALlRiQ07uzGKZ3oSiVDfmkcmB7Asqjh8Hk\nyGpgN1fzJst5gqtYQimPMVS/s8USFzm8qgKnQkIJ1DporHXwI8KOaGGtFUqUZDZp\n0wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2L77Rv6h3YnscpHtu4S\nRv5mbRzvJE1tg2WXp8ARpLrY4sXTUsn5CYiZT/BuXlxSB4DW5i78nzvRHjDvOWwH\n3UnYKFonGqOarIXylnWnTy2P2ZngB3UluYajRqoSwj+MboIizGSFIWua/BxKnG1C\nDkJP2blBPjoU8GQ072kC6AsyUc1wyJr2yuBgr78nnuPjWp2bqZrAja8unT7/GaNW\nOjhfR99KKtneE7733L0vPFXdwCLWlJALlRiQ07uzGKZ3oSiVDfmkcmB7Asqjh8Hk\nyGpgN1fzJst5gqtYQimPMVS/s8USFzm8qgKnQkIJ1DporHXwI8KOaGGtFUqUZDZp\n0wIDAQAB\n-----END PUBLIC KEY-----\n"
     }
 }
