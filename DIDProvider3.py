@@ -29,25 +29,25 @@ def generate_did():
 
 def generate_key_pair():
     """
-    Genera un par de claves RSA (2048 bits) y devuelve
-    la clave pública y la clave privada en formato PEM.
+    Genera una clave privada RSA (2048 bits) y lee la clave pública desde un archivo.
+    Devuelve la clave pública y la clave privada en formato PEM.
     """
+    # Generar la clave privada
     private_key = rsa.generate_private_key(
         public_exponent=65537,
         key_size=2048
     )
-    public_key = private_key.public_key()
 
+    # Convertir la clave privada a formato PEM
     private_pem = private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
         format=serialization.PrivateFormat.TraditionalOpenSSL,
         encryption_algorithm=serialization.NoEncryption()
     ).decode('utf-8')
 
-    public_pem = public_key.public_bytes(
-        encoding=serialization.Encoding.PEM,
-        format=serialization.PublicFormat.SubjectPublicKeyInfo
-    ).decode('utf-8')
+    # Leer la clave pública desde el archivo miclavepublica.pem
+    with open("miclavepublica.pem", "r") as public_key_file:
+        public_pem = public_key_file.read()
 
     return public_pem, private_pem
 
