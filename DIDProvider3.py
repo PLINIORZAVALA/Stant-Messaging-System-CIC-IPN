@@ -29,44 +29,58 @@ def generate_did():
 
 def generate_key_pair():
     """
-    Genera una clave privada RSA (2048 bits) y lee la clave pública desde un archivo.
-    Devuelve la clave pública y la clave privada en formato PEM.
+    Genera un par de claves RSA (2048 bits) y devuelve
+    la clave pública y la clave privada en formato PEM.
     """
-    # Generar la clave privada
     private_key = rsa.generate_private_key(
         public_exponent=65537,
         key_size=2048
     )
+    public_key = private_key.public_key()
 
-    # Convertir la clave privada a formato PEM
     private_pem = private_key.private_bytes(
         encoding=serialization.Encoding.PEM,
         format=serialization.PrivateFormat.TraditionalOpenSSL,
         encryption_algorithm=serialization.NoEncryption()
     ).decode('utf-8')
 
-    # Leer la clave pública desde el archivo miclavepublica.pem
-    with open("miclavepublica.pem", "r") as public_key_file:
-        public_pem = public_key_file.read()
+    public_pem = public_key.public_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PublicFormat.SubjectPublicKeyInfo
+    ).decode('utf-8')
 
     return public_pem, private_pem
 
 @app.route('/CreateDID', methods=['POST'])
 def create_did():
     """
-    Crea un DID, genera un par de claves RSA y
-    almacena solo la clave pública en el servidor.
+    Crea un DID, genera una clave privada RSA y verifica que la clave pública
+    proporcionada coincida con la clave pública en el archivo miclavepublica.pem.
     """
     data = request.json
 
     # Validar que se proporcionen los datos básicos
-    required_fields = ['entity', 'name', 'purpose']
+    required_fields = ['entity', 'name', 'purpose', 'publicKey']
     if not all(field in data for field in required_fields):
         return jsonify({"error": "Missing required fields"}), 400
 
-    # Generar el DID y el par de claves RSA
+    # Leer la clave pública desde el archivo miclavepublica.pem
+    try:
+        with open("miclavepublica.pem", "r") as public_key_file:
+            stored_public_pem = public_key_file.read().strip()  # Eliminar espacios y saltos de línea
+    except FileNotFoundError:
+        return jsonify({"error": "El archivo miclavepublica.pem no existe"}), 400
+
+    # Comparar la clave pública enviada con la clave pública almacenada
+    if data['publicKey'].strip() != stored_public_pem:
+        return jsonify({"error": "La clave pública no coincide con la clave almacenada"}), 400
+
+    # Generar el DID y la clave privada RSA
     did = generate_did()
-    public_pem, private_pem = generate_key_pair()
+    private_pem = generate_key_pair()
+
+    # Usar la clave pública proporcionada en la petición
+    public_pem = data['publicKey']
 
     did_document = {
         "id": did,
