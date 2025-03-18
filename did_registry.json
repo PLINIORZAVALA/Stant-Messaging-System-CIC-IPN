@@ -108,5 +108,163 @@
             "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2L77Rv6h3YnscpHtu4S\nRv5mbRzvJE1tg2WXp8ARpLrY4sXTUsn5CYiZT/BuXlxSB4DW5i78nzvRHjDvOWwH\n3UnYKFonGqOarIXylnWnTy2P2ZngB3UluYajRqoSwj+MboIizGSFIWua/BxKnG1C\nDkJP2blBPjoU8GQ072kC6AsyUc1wyJr2yuBgr78nnuPjWp2bqZrAja8unT7/GaNW\nOjhfR99KKtneE7733L0vPFXdwCLWlJALlRiQ07uzGKZ3oSiVDfmkcmB7Asqjh8Hk\nyGpgN1fzJst5gqtYQimPMVS/s8USFzm8qgKnQkIJ1DporHXwI8KOaGGtFUqUZDZp\n0wIDAQAB\n-----END PUBLIC KEY-----\n"
         },
         "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2L77Rv6h3YnscpHtu4S\nRv5mbRzvJE1tg2WXp8ARpLrY4sXTUsn5CYiZT/BuXlxSB4DW5i78nzvRHjDvOWwH\n3UnYKFonGqOarIXylnWnTy2P2ZngB3UluYajRqoSwj+MboIizGSFIWua/BxKnG1C\nDkJP2blBPjoU8GQ072kC6AsyUc1wyJr2yuBgr78nnuPjWp2bqZrAja8unT7/GaNW\nOjhfR99KKtneE7733L0vPFXdwCLWlJALlRiQ07uzGKZ3oSiVDfmkcmB7Asqjh8Hk\nyGpgN1fzJst5gqtYQimPMVS/s8USFzm8qgKnQkIJ1DporHXwI8KOaGGtFUqUZDZp\n0wIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:0dd7607b-a99e-43e7-bd05-05c94b604f13": {
+        "did_document": {
+            "id": "did:key:0dd7607b-a99e-43e7-bd05-05c94b604f13",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoFEhTWBR7L2Ft79gdnvD\nUST1ytMnPmDs2yJd/Cl97F6OcCI5p9qGGPQcKgwBj2by0Fg+XGvn4RhepzMkc2eM\nsw7u5b/zxJbJzdzxdEueyF4ibwo2yuVDqkJFtPUkDsTlr9BXXF1S7gskyd3/nSXm\nrla0jXJ9GmlmcSCRQfLczvBU3bBZDEIbAK7WZaK378K6rGkkiGrzz06VuL8pnARH\nnAIG0JANP6Ni6sT9hrEBFr2XcWdHzEaOkj2pmmj4+8w2YLdK1kKskuVEUoG5NZVs\npKcQDFXPdF+sLsTAviPQI7/fEeuVfeN+4k/BxpAXfH7T4baU14yclHB/cCIkb58V\nhQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoFEhTWBR7L2Ft79gdnvD\nUST1ytMnPmDs2yJd/Cl97F6OcCI5p9qGGPQcKgwBj2by0Fg+XGvn4RhepzMkc2eM\nsw7u5b/zxJbJzdzxdEueyF4ibwo2yuVDqkJFtPUkDsTlr9BXXF1S7gskyd3/nSXm\nrla0jXJ9GmlmcSCRQfLczvBU3bBZDEIbAK7WZaK378K6rGkkiGrzz06VuL8pnARH\nnAIG0JANP6Ni6sT9hrEBFr2XcWdHzEaOkj2pmmj4+8w2YLdK1kKskuVEUoG5NZVs\npKcQDFXPdF+sLsTAviPQI7/fEeuVfeN+4k/BxpAXfH7T4baU14yclHB/cCIkb58V\nhQIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:05ab4513-72c1-44cf-8da6-92eaeb0d58bf": {
+        "did_document": {
+            "id": "did:key:05ab4513-72c1-44cf-8da6-92eaeb0d58bf",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:58be4be0-4a45-4b4e-8ff9-c98b60265b39": {
+        "did_document": {
+            "id": "did:key:58be4be0-4a45-4b4e-8ff9-c98b60265b39",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:1ce12dbe-53d3-455d-a7ae-804340c9e16c": {
+        "did_document": {
+            "id": "did:key:1ce12dbe-53d3-455d-a7ae-804340c9e16c",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjX99/ww6x3JXEZNptmNe\nUo9DYTrXv4OPOC6UsSgeEGL3g2xnOYXlzKnwKjSxxQ2v/4l1LRt+iFDeozrLeWsf\nnR/8w77csFTySUn3s/D9Btn7FoptE7BX9jjoTGNtv79hbEHy4BVwXDicxYd9FUTP\nLrn1syHVPYNoL5AET7xoV3sEGcBTw+0WF/4UstHm4WiObjUHF7lHykynmh+tCNdo\nGjGSKk2VgS/EoMUy4uPMaVdLUcS8049/qgD+7f4eVsMKhsu4QAJQts488R90lkwU\nMWeF2+OS66BwEHSWPBn+ltsUwqRUHirSCdvMjjGPn2rYyd7F9KPT3GgDTjR8pbNt\n+wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjX99/ww6x3JXEZNptmNe\nUo9DYTrXv4OPOC6UsSgeEGL3g2xnOYXlzKnwKjSxxQ2v/4l1LRt+iFDeozrLeWsf\nnR/8w77csFTySUn3s/D9Btn7FoptE7BX9jjoTGNtv79hbEHy4BVwXDicxYd9FUTP\nLrn1syHVPYNoL5AET7xoV3sEGcBTw+0WF/4UstHm4WiObjUHF7lHykynmh+tCNdo\nGjGSKk2VgS/EoMUy4uPMaVdLUcS8049/qgD+7f4eVsMKhsu4QAJQts488R90lkwU\nMWeF2+OS66BwEHSWPBn+ltsUwqRUHirSCdvMjjGPn2rYyd7F9KPT3GgDTjR8pbNt\n+wIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:07d946b0-5415-4b10-bb26-a35a394930b6": {
+        "did_document": {
+            "id": "did:key:07d946b0-5415-4b10-bb26-a35a394930b6",
+            "controller": "MiEmpresa",
+            "name": "DID de prueba",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqNBWv+rwCwybmSMmPciZ\n3XNEVvWQE1Cu9O6ugJqgabP18IYYFgQj70M7ebTum+0b9r6WyTmLQk8+G2/xOLIq\n0k3HrSPUtCUEqdByJMwBIDlJoeW3OrRgRvjZL7ilOYgwAOPKco/AFQqyE9I9G65m\n3YTAtVtzo/eMxJHkoIf09QsXBC8eiG92O4mwrmyZDKMIoFj5vrDKViousRvxmoAe\nt5ZdHDLbUH+q1bPPvBQJdmPzKR/oEvYbBi/dUUdbAF+tgBMGaD+cCE6LJ2hJ/fkA\nttgKIjifBP/ok56J/wdzjsf7fZGmilOzvo6av1qdAYuo4gwm8Mh+Ge3oDuAQOTL0\n3QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqNBWv+rwCwybmSMmPciZ\n3XNEVvWQE1Cu9O6ugJqgabP18IYYFgQj70M7ebTum+0b9r6WyTmLQk8+G2/xOLIq\n0k3HrSPUtCUEqdByJMwBIDlJoeW3OrRgRvjZL7ilOYgwAOPKco/AFQqyE9I9G65m\n3YTAtVtzo/eMxJHkoIf09QsXBC8eiG92O4mwrmyZDKMIoFj5vrDKViousRvxmoAe\nt5ZdHDLbUH+q1bPPvBQJdmPzKR/oEvYbBi/dUUdbAF+tgBMGaD+cCE6LJ2hJ/fkA\nttgKIjifBP/ok56J/wdzjsf7fZGmilOzvo6av1qdAYuo4gwm8Mh+Ge3oDuAQOTL0\n3QIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:8d0b4e12-57a9-44f3-8d5a-beee580f036f": {
+        "did_document": {
+            "id": "did:key:8d0b4e12-57a9-44f3-8d5a-beee580f036f",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1KV4c1oZSC2bhMAwN5x\n0+y3TdgXEweYmBKgipUGJTunOFmCAVDe0d7PmSVC7bKxTk6A06v1rkN7W1ga5N6W\nA3Oqh9xuFBI5/fe9Jhwiqa/H4VSYaTtAQDl4xD7E69cg6/9KrPRdhpocoxMxEwUu\nckLfF8aCDigLwduT3UgzVbAY1q6rNrXZvW0rLdUFG+LdqMgzFwR0REwdRzBFlEw8\nHiIW47vHyiUvLSbXhXUGb6bAP5c7bng+5IFgk8QXzpEF2yLB6H6vqwCv5c1WX2OL\nszbeAZ80Xnz8KZmthwFD2Uwvy0je2mvDBdAcjAf3UKlaAdnGfdO96CQLKScMzini\n3QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1KV4c1oZSC2bhMAwN5x\n0+y3TdgXEweYmBKgipUGJTunOFmCAVDe0d7PmSVC7bKxTk6A06v1rkN7W1ga5N6W\nA3Oqh9xuFBI5/fe9Jhwiqa/H4VSYaTtAQDl4xD7E69cg6/9KrPRdhpocoxMxEwUu\nckLfF8aCDigLwduT3UgzVbAY1q6rNrXZvW0rLdUFG+LdqMgzFwR0REwdRzBFlEw8\nHiIW47vHyiUvLSbXhXUGb6bAP5c7bng+5IFgk8QXzpEF2yLB6H6vqwCv5c1WX2OL\nszbeAZ80Xnz8KZmthwFD2Uwvy0je2mvDBdAcjAf3UKlaAdnGfdO96CQLKScMzini\n3QIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:2fcc47fe-9489-49e0-a3ab-129fdf8c5343": {
+        "did_document": {
+            "id": "did:key:2fcc47fe-9489-49e0-a3ab-129fdf8c5343",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:e6776713-59cf-4d90-895f-89f35aa239a0": {
+        "did_document": {
+            "id": "did:key:e6776713-59cf-4d90-895f-89f35aa239a0",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:a9c94dbc-8eab-4c10-9874-a3c6360d8bbf": {
+        "did_document": {
+            "id": "did:key:a9c94dbc-8eab-4c10-9874-a3c6360d8bbf",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:18e7cc7d-2690-4079-a472-219377dd5bfa": {
+        "did_document": {
+            "id": "did:key:18e7cc7d-2690-4079-a472-219377dd5bfa",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:b0b7d781-a9c6-4c12-81d0-dcf5e093c0e7": {
+        "did_document": {
+            "id": "did:key:b0b7d781-a9c6-4c12-81d0-dcf5e093c0e7",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:e9e93ea7-0038-4b50-b364-ad134efacbea": {
+        "did_document": {
+            "id": "did:key:e9e93ea7-0038-4b50-b364-ad134efacbea",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+    },
+    "did:key:b6c4018d-c805-4677-83e7-13e4c35491cf": {
+        "did_document": {
+            "id": "did:key:b6c4018d-c805-4677-83e7-13e4c35491cf",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+    },
+    "did:key:45669b05-7c7b-4a89-971b-748d920a8432": {
+        "did_document": {
+            "id": "did:key:45669b05-7c7b-4a89-971b-748d920a8432",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:6d61d5a7-8ba7-4b95-845b-aeb81d327131": {
+        "did_document": {
+            "id": "did:key:6d61d5a7-8ba7-4b95-845b-aeb81d327131",
+            "controller": "Control Z",
+            "name": "By Max Plinior",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:1e8f888f-5afa-4f03-80a1-d22abfe7d764": {
+        "did_document": {
+            "id": "did:key:1e8f888f-5afa-4f03-80a1-d22abfe7d764",
+            "controller": "Gebait",
+            "name": "By Alex",
+            "purpose": "Autenticaci\u00f3n",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
     }
 }
