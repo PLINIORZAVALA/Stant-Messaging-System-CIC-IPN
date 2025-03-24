@@ -1,62 +1,62 @@
 
 # DID Management API
 
-**Fecha de última actualización:** 18/03/2025
-**Colaboradores:** 4
+**Last updated date:** 18/03/2025
+**Collaborators:** 4
 
-## Introducción
+## Introduction
 
-Este repositorio contiene una API desarrollada en Flask para la gestión de Identificadores Descentralizados (DIDs). La API permite crear, verificar y actualizar DIDs utilizando criptografía asimétrica (RSA). Los DIDs se almacenan en un registro local en formato JSON.
+This repository contains a Flask-based API for managing decentralized identifiers (DIDs). The API allows you to create, verify, and update DIDs using asymmetric cryptography (RSA). DIDs are stored in a local registry in JSON format.
 
-### Tecnologías utilizadas
-- **Flask**: Framework web para Python.
-- **Cryptography**: Librería para operaciones criptográficas.
-- **RSA**: Algoritmo de criptografía asimétrica para la generación de claves y firmas.
+### Technologies used
+- **Flask**: Web framework for Python.
+- **Cryptography**: Library for cryptographic operations.
+- **RSA**: Asymmetric cryptography algorithm for key and signature generation.
 
 ---
 
-## Empezando
+## Getting started
 
-### Prerrequisitos
+### Prerequisites
 
-Asegúrate de tener instalado lo siguiente en tu sistema:
-- **Python 3.8 o superior**: [Descargar Python](https://www.python.org/downloads/)
-- **Pip**: Gestor de paquetes de Python (viene incluido con Python 3.4+).
+Make sure you have the following installed on your system:
+- **Python 3.8 or higher**: [Download Python](https://www.python.org/downloads/)
+- **Pip**: Python Package Manager (comes included with Python 3.4+).
 
-### Instalación
+### Facility
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```bash
    https://github.com/PLINIORZAVALA/Stant-Messaging-System-CIC-IPN.git
    ```
-2. Navega al directorio del proyecto:
+2. Navigate to the project directory:
    ```bash
    cd tu-repositorio
    ```
-3. Instala las dependencias:
+3. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-### Ejecución
+### Execution
 
-Para iniciar la API, ejecuta:
+To start the API, run:
 ```bash
 python3 DIDProvider3.py
 ```
 
-La API estará disponible en `http://localhost:5000`.
+The API will be available at `http://localhost:5000`.
 
 ---
 
-## Uso de la API
+## Using the API
 
-### Crear un DID
+### Create a DID
 **Endpoint:** `POST /CreateDID`
 
-Crea un nuevo DID y lo almacena en el registro. Se requiere proporcionar una clave pública en formato PEM.
+Creates a new DID and stores it in the registry. A public key in PEM format is required.
 
-**Ejemplo de solicitud:**
+**Request example:**
 ```json
 {
     "entity": "Example Corp",
@@ -66,7 +66,7 @@ Crea un nuevo DID y lo almacena en el registro. Se requiere proporcionar una cla
 }
 ```
 
-**Respuesta:**
+**Answer:**
 ```json
 {
     "DID": "did:key:123e4567-e89b-12d3-a456-426614174000",
@@ -80,20 +80,20 @@ Crea un nuevo DID y lo almacena en el registro. Se requiere proporcionar una cla
 }
 ```
 
-### Verificar un DID
+### Verify a DID
 **Endpoint:** `GET /VerifyDID`
 
-Verifica si un DID existe en el registro.
+Checks if a DID exists in the registry.
 
-**Parámetros:**
-- `did`: El DID a verificar.
+**Parameters:**
+- `did`: The DID to verify.
 
-**Ejemplo de solicitud:**
+**Request example:**
 ```
 GET /VerifyDID?did=did:key:123e4567-e89b-12d3-a456-426614174000
 ```
 
-**Respuesta:**
+**Answer:**
 ```json
 {
     "verified": true,
@@ -101,20 +101,20 @@ GET /VerifyDID?did=did:key:123e4567-e89b-12d3-a456-426614174000
 }
 ```
 
-### Obtener el DID Document
+### Get the Document DID
 **Endpoint:** `GET /DIDRegistryGet`
 
-Retorna el DID Document y la clave pública asociada a un DID.
+Returns the Document DID and the public key associated with a DID.
 
-**Parámetros:**
-- `did`: El DID a consultar.
+**Parameters:**
+- `did`: The DID to query.
 
-**Ejemplo de solicitud:**
+**Request example:**
 ```
 GET /DIDRegistryGet?did=did:key:123e4567-e89b-12d3-a456-426614174000
 ```
 
-**Respuesta:**
+**Answer:**
 ```json
 {
     "DID_Document": {
@@ -128,12 +128,12 @@ GET /DIDRegistryGet?did=did:key:123e4567-e89b-12d3-a456-426614174000
 }
 ```
 
-### Actualizar un DID
+### Update a DID
 **Endpoint:** `POST /UpdateDID`
 
-Actualiza el DID Document si la firma RSA es válida.
+Updates the DID Document if the RSA signature is valid.
 
-**Ejemplo de solicitud:**
+**Request example:**
 ```json
 {
     "did": "did:key:123e4567-e89b-12d3-a456-426614174000",
@@ -144,7 +144,7 @@ Actualiza el DID Document si la firma RSA es válida.
 }
 ```
 
-**Respuesta:**
+**Answer:**
 ```json
 {
     "status": "DID Document updated",
@@ -160,23 +160,23 @@ Actualiza el DID Document si la firma RSA es válida.
 
 ---
 
-## Contribuir
+## Contribute
 
-¡Agradecemos tu interés en contribuir a este proyecto! Por favor, sigue estos pasos:
+Thank you for your interest in contributing to this project! Please follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una rama para tu contribución:
-   ```bash
-   git checkout -b nombre-de-tu-rama
-   ```
-3. Realiza tus cambios y asegúrate de que las pruebas pasen.
-4. Envía un pull request con una descripción detallada de tus cambios.
+1. Fork the repository.
+2. Create a branch for your contribution:
+```bash
+git checkout -b your-branch-name
+```
+3. Make your changes and make sure the tests pass.
+4. Submit a pull request with a detailed description of your changes.
 
-### Reportar problemas
+### Reporting Issues
 
-Si encuentras algún problema, por favor [abre un issue](https://github.com/PLINIORZAVALA) en nuestro repositorio.
+If you encounter any issues, please open an issue in our repository.
 
 
-### Notas adicionales:
-- Asegúrate de reemplazar `tu-usuario` y `tu-repositorio` con los valores correctos de tu repositorio.
-- Si tienes pruebas unitarias o documentación adicional, agrega secciones específicas para ellas.
+### Additional Notes:
+- Make sure to replace `your-username` and `your-repository` with the correct values ​​for your repository.
+- If you have unit tests or additional documentation, add specific sections for them.
