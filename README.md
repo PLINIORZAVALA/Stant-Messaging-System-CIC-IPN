@@ -58,12 +58,15 @@ Creates a new DID and stores it in the registry. A public key in PEM format is r
 
 **Request example:**
 ```json
-{
-    "entity": "Example Corp",
-    "name": "Example DID",
-    "purpose": "Authentication",
-    "publicKey": "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
-}
+wget --header 'Content-Type: application/json' \
+  --post-data '{
+    "entity": "MiOrganizacion",
+    "name": "MiIdentidadDigital",
+    "purpose": "autenticacion",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nTU_CLAVE_PUBLICA_AQUI\n-----END PUBLIC KEY-----"
+  }' \
+  -O - \
+  http://localhost:5000/CreateDID
 ```
 
 **Answer:**
