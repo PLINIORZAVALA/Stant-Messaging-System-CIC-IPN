@@ -266,5 +266,45 @@
             "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
         },
         "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:a6cfcf29-70f1-4350-815b-92acfbcef4ba": {
+        "did_document": {
+            "id": "did:key:a6cfcf29-70f1-4350-815b-92acfbcef4ba",
+            "controller": "Example Corp",
+            "name": "Example DID",
+            "purpose": "Authentication",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:c083d436-6f5a-4467-b17c-d536b7fc5448": {
+        "did_document": {
+            "id": "did:key:c083d436-6f5a-4467-b17c-d536b7fc5448",
+            "controller": "Example Max",
+            "name": "Example DID",
+            "purpose": "Authentication",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:c2f07338-bc1d-454c-a6cf-154d96e51623": {
+        "did_document": {
+            "id": "did:key:c2f07338-bc1d-454c-a6cf-154d96e51623",
+            "controller": "MiOrganizacion",
+            "name": "MiIdentidadDigital",
+            "purpose": "autenticacion",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:b48eb113-17cc-4623-9a01-e14bc3da3980": {
+        "did_document": {
+            "id": "did:key:b48eb113-17cc-4623-9a01-e14bc3da3980",
+            "controller": "MiOrganizacion",
+            "name": "MiIdentidadDigital",
+            "purpose": "autenticacion",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMAXBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMAXBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
     }
 }

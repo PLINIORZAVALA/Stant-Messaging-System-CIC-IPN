@@ -54,36 +54,41 @@ def generate_key_pair():
 @app.route('/CreateDID', methods=['POST'])
 def create_did():
     """
-    Crea un DID usando una clave pública proporcionada en la petición.
-    La clave privada se genera previamente con OpenSSL y no se maneja en este código.
+    Crea un DID verificando primero que la clave pública no esté duplicada.
+    Versión optimizada sin carga redundante del registro.
     """
     data = request.json
 
-    # Validar que se proporcionen los datos básicos
-    required_fields = ['entity', 'name', 'purpose', 'publicKey']
-    if not all(field in data for field in required_fields):
+    # Validación mínima de campos
+    if not all(field in data for field in ['entity', 'name', 'purpose', 'publicKey']):
         return jsonify({"error": "Missing required fields"}), 400
 
-    # Generar el DID
+    public_key = data['publicKey']
+
+    # Verificación de clave duplicada (sin cargar el registro)
+    if any(entry.get('public_key') == public_key for entry in did_registry.values()):
+        return jsonify({
+            "error": "Duplicate public key",
+            "message": "La clave pública ya está registrada en otro DID"
+        }), 409
+
+    # Creación del DID
     did = generate_did()
-
-    # Usar la clave pública proporcionada en la petición
-    public_pem = data['publicKey']
-
+    
     did_document = {
         "id": did,
         "controller": data['entity'],
         "name": data['name'],
         "purpose": data['purpose'],
-        "publicKey": public_pem
+        "publicKey": public_key
     }
 
-    # Almacenar el DID Document y la clave pública en el registro
+    # Registro (asumiendo que did_registry es global y persistente)
     did_registry[did] = {
         "did_document": did_document,
-        "public_key": public_pem  # Almacenar la clave pública por separado
+        "public_key": public_key
     }
-
+    
     save_registry()
 
     return jsonify({
