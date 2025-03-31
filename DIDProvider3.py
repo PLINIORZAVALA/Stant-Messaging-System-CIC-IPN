@@ -3,12 +3,26 @@ import uuid
 import json
 import os
 import base64
+from flask_cors import CORS # type: ignore
 
 # Librerías de criptografía
 from cryptography.hazmat.primitives import serialization, hashes
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 
 app = Flask(__name__)
+# Configuración de CORS para todas las rutas
+CORS(app)
+
+# Configuración PROBADA de CORS
+CORS(app, resources={
+    r"/VerifyDID": {
+        "origins": ["http://localhost:8000", "http://127.0.0.1:8000"],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"],
+        "supports_credentials": True,
+        "max_age": 600
+    }
+})
 
 # Ruta para almacenar el registro de DIDs
 DID_REGISTRY_FILE = 'did_registry.json'

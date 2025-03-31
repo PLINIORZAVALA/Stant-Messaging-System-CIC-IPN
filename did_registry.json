@@ -306,5 +306,15 @@
             "publicKey": "-----BEGIN PUBLIC KEY-----\nMAXBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
         },
         "public_key": "-----BEGIN PUBLIC KEY-----\nMAXBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+    },
+    "did:key:cb3ddecb-c886-4cd6-87cc-eb072b1aed40": {
+        "did_document": {
+            "id": "did:key:cb3ddecb-c886-4cd6-87cc-eb072b1aed40",
+            "controller": "MiOrganizacion",
+            "name": "MiIdentidadDigital",
+            "purpose": "autenticacion",
+            "publicKey": "-----BEGIN PUBLIC KEY-----\nMAXPLINIORkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        "public_key": "-----BEGIN PUBLIC KEY-----\nMAXPLINIORkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuu1HyxG9ZQeJWi34GDMl\nfB4eEljN7beHV9/Tod9G3hV9e42XRCv5bFYIovCGuPEVZrRlaTlBjscu7JocatB5\n8e/naA/spzAnlIJcT5VqGXChilVKt07qqBObdrYIi7ny4F2WgeipUSc4C09IRlkO\n4yOEIDZszQDAJ/Ci7/JRLg893gp3qXLEvrChP5K2fa45VLhXfEVpxvjZSqxzWix+\n9aqNHoEXGhYx2k3gzZu+HVxUpY7agN/63p66aOt5GNGCAZiNHMozHx14xWhlAk50\nmPy69evT18KMQZgpMbkL+TRrxB8MLKtBeQMVycIYcxOVc32t9PlRz2cxTsOfSVyL\ngwIDAQAB\n-----END PUBLIC KEY-----\n"
     }
 }
