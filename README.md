@@ -131,6 +131,7 @@ GET /DIDRegistryGet?did=did:key:123e4567-e89b-12d3-a456-426614174000
 }
 ```
 ### Signature DID
+**Signature example:**
 ```bash
 echo -n "did:key:f98fb796-f57c-464a-a1ee-e5e21b9f438f" | openssl dgst -sha256 -sign private_key.pem
 ```
