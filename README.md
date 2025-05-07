@@ -11,7 +11,7 @@
 
 #### Initial structure of the `walletTools` folder
 
-![alt text](image-1.png)
+![alt text](image-4.png)
 - **`generateKeys.sh`**: Paste the complete code for the key generation script here.
 - **`signDID.sh`**: Paste the complete code for the DID signing script here.
 
