@@ -17,7 +17,7 @@
 
 #### Final Post-Execution Files
 
-Sigue estos pasos para generar la estructura final:  
+Follow these steps to generate the final structure:
 
 1. **Navigate to the correct folder**:  
    ```bash
