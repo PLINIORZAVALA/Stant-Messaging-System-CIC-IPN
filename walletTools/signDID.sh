@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # sign_did.sh: Firma un DID con una clave privada Ed25519
-# Uso: ./sign_did.sh -k <privkey.pem> -d <DID> [-o <out_file>]
+# Uso: ./signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
 
 set -euo pipefail
 
