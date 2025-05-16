@@ -19,7 +19,7 @@ This repository contains a Flask-based API for managing decentralized identifier
 ### Prerequisites
 
 Make sure you have the following installed on your system:
-- **Python 3.8 or higher**: [Download Python](https://www.python.org/downloads/)
+- **Python 3.12.3 or higher**: [Download Python](https://www.python.org/downloads/)
 - **Pip**: Python Package Manager (comes included with Python 3.4+).
 - **WSL**: Ubuntu-24.04 versión need for SignDID whit OpenSSL version 3.x.x.x.
 
