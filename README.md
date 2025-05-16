@@ -49,9 +49,9 @@ The API will be available at `http://localhost:5000`.
 
 ---
 
-### Upgrade Steps 
+## Upgrade Steps 
 
-#### Main Document Structure
+### Main Document Structure
 
 - **`DIDProvider3.py`**: You must paste all the code provided for the backend.
 - **`README.md`**: Update this file with instructions based on the code's functionality.
