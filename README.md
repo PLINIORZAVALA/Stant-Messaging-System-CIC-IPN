@@ -55,7 +55,7 @@ The API will be available at `http://localhost:5000`.
 
 - **`DIDProvider3.py`**: You must paste all the code provided for the backend.
 - **`README.md`**: Update this file with instructions based on the code's functionality.
-- **`bin` and `lib`**: These are the virtual environment directories where the backend runs (they do not require manual modification).
+- **`venv`**: These are the virtual environment directories where the backend runs (they do not require manual modification).
 - **`requirements.txt`**: List of dependencies required for installation (run `pip install -r requirements.txt`).
 - **`walletTools`**: Folder containing the key management scripts.
 
