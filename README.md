@@ -99,7 +99,6 @@ Follow these steps to generate the final structure:
   ```bash
   ls -l
   ```
----
 
 ### **Key Notes**
 - **Ed25519**: Used for digital signatures.
