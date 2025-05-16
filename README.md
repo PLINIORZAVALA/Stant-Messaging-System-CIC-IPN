@@ -2,7 +2,6 @@
 
 #### Main Document Structure
 
-![alt text](image.png)
 - **`DIDProvider3.py`**: You must paste all the code provided for the backend.
 - **`README.md`**: Update this file with instructions based on the code's functionality.
 - **`bin` and `lib`**: These are the virtual environment directories where the backend runs (they do not require manual modification).
@@ -11,7 +10,6 @@
 
 #### Initial structure of the `walletTools` folder
 
-![alt text](image-5.png)
 - **`generateKeys.sh`**: Paste the complete code for the key generation script here.
 - **`signDID.sh`**: Paste the complete code for the DID signing script here.
 
@@ -34,14 +32,12 @@ Follow these steps to generate the final structure:
 
 #### Expected Output:
 
-![alt text](image-2.png)
 - The following files will be generated in `walletTools`:
 - Public/private keys (e.g., `key_public.pem`, `key_private.pem`).
 - Signature files (e.g., `did_signed.json`). 
 
 #### Verificación:  
 
-![alt text](image-3.png)
 - Use `ls` to confirm that the files were created:
   ```bash
   ls -l
