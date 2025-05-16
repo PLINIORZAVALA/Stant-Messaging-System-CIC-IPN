@@ -1,6 +1,6 @@
 # DID Management API
 
-**Last updated date:** 18/03/2025
+**Last updated date:** 15/05/2025
 **Collaborators:** 4
 
 ## Introduction
