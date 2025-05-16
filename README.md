@@ -106,4 +106,136 @@ Follow these steps to generate the final structure:
 - **JWK vs. PEM**:
 - `JWK` (JSON Web Key): Standard format for keys in web environments.
 - `PEM`: Traditional (base64) format used in OpenSSL.
+  
+---
 
+## Using the API
+
+### Create a DID
+**Endpoint:** `POST /CreateDID`
+
+Creates a new DID and stores it in the registry. A public key in PEM format is required.
+
+**Request example:**
+```json
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "jwk_auth": {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "x": " z9yQ7eAiZg9DgSI9QhIDhkd3blOvFHmIo-Dqg0PHpZA"
+    },
+    "jwk_enc": {
+      "kty": "OKP",
+      "crv": "X25519",
+      "x": " lzeH6SSSyArkVUoEbTyif6xptkGtuoUUMit205-w0D0"
+    }
+  }' \
+  http://localhost:5000/CreateDID
+```
+
+**Answer in did_registry.json:**
+```json
+{
+    "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC": {
+        "@context": [
+            "https://www.w3.org/ns/did/v1",
+            "https://w3id.org/security/suites/ed25519-2020/v1",
+            "https://w3id.org/security/suites/x25519-2020/v1"
+        ],
+        "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+        "verificationMethod": [
+            {
+                "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#auth-key",
+                "type": "Ed25519VerificationKey2020",
+                "controller": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+                "publicKeyMultibase": "z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC"
+            },
+            {
+                "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#enc-key",
+                "type": "X25519KeyAgreementKey2020",
+                "controller": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+                "publicKeyMultibase": "z2D7H2TMK2FWCmFG9uxzcAsBjdTAMfjHBjjVtWshJrJRzZL"
+            }
+        ],
+        "authentication": [
+            "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#auth-key"
+        ],
+        "keyAgreement": [
+            "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#enc-key"
+        ],
+        "service": [
+            {
+                "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#didcomm",
+                "type": "DIDCommMessaging",
+                "serviceEndpoint": "https://example.com/didcomm",
+                "accept": [
+                    "didcomm/v2"
+                ]
+            }
+        ]
+    }
+}
+
+```
+
+### Get a DID
+**Endpoint:** `GET /DIDRegistryGet`
+
+Get if a DID exists in the registry.
+
+**Parameters:**
+- `did`: The DID to verify.
+
+**Request example:**
+```
+wget --method=GET \
+  --output-document=did_response.json \
+"http://localhost:5000/DIDRegistryGet?did=did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb"
+```
+
+**Answer in did_response.json:**
+```json
+{
+  "DID_Document": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/suites/ed25519-2020/v1",
+      "https://w3id.org/security/suites/x25519-2020/v1"
+    ],
+    "authentication": [
+      "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#auth-key"
+    ],
+    "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+    "keyAgreement": [
+      "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#enc-key"
+    ],
+    "service": [
+      {
+        "accept": [
+          "didcomm/v2"
+        ],
+        "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#didcomm",
+        "serviceEndpoint": "https://example.com/didcomm",
+        "type": "DIDCommMessaging"
+      }
+    ],
+    "verificationMethod": [
+      {
+        "controller": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+        "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#auth-key",
+        "publicKeyMultibase": "z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+        "type": "Ed25519VerificationKey2020"
+      },
+      {
+        "controller": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC",
+        "id": "did:key:z6Mkh3pN8SDcZkpbivbPu34747ZMpzuUdjJWFCQgSuxYj1xC#enc-key",
+        "publicKeyMultibase": "z2D7H2TMK2FWCmFG9uxzcAsBjdTAMfjHBjjVtWshJrJRzZL",
+        "type": "X25519KeyAgreementKey2020"
+      }
+    ]
+  }
+}
+
+```
