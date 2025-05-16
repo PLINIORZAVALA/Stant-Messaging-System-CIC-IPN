@@ -83,13 +83,28 @@ Follow these steps to generate the final structure:
 
 #### Expected Output:
 
-- The following files will be generated in `walletTools`:
-- Public/private keys (e.g., `key_public.pem`, `key_private.pem`).
-- Signature files (e.g., `did_signed.json`). 
+#### **Key Files**
+| File | Description |
+|---------|-------------|
+| `ed25519.jwk` | Ed25519 key in JWK (JSON Web Key) format. |
+| `ed25519_priv.pem` | Ed25519 private key in PEM format. |
+| `ed25519_pub.pem` | Ed25519 public key in PEM format. |
+| `x25519.jwk` | X25519 key (for ECDH) in JWK format. |
+| `x25519_priv.pem` | X25519 private key in PEM format. |
+| `x25519_pub.pem` | X25519 public key in PEM format. |
 
 #### Verificación:  
 
 - Use `ls` to confirm that the files were created:
   ```bash
   ls -l
-  ```  
+  ```
+---
+
+### **Key Notes**
+- **Ed25519**: Used for digital signatures.
+- **X25519**: Used for key exchange (ECDH).
+- **JWK vs. PEM**:
+- `JWK` (JSON Web Key): Standard format for keys in web environments.
+- `PEM`: Traditional (base64) format used in OpenSSL.
+
