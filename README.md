@@ -335,4 +335,94 @@ wget --method=POST \
   "verified": true
 }
 ```
+### VerifySignedDID
+**Endpoint:** `POST /UpdateDID`
+
+POST updates DID Document if the RSA signature is valid.
+**Request example:**
+```
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "did": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+    "signature": "8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ==",
+    "updates": {
+      "service": [
+        {
+          "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#mi-servicio",
+          "type": "DIDCommMessaging",
+          "serviceEndpoint": "https://nuevo-ejemplo.com/endpoint",
+          "accept": ["didcomm/v2"],
+          "routingKeys": ["did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#enc-key"]
+        }
+      ]
+    }
+  }' \
+  http://localhost:5000/UpdateDID
+```
+**Answer in verifySignedDID.json**
+```json
+{
+    "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb": {
+        "@context": [
+            "https://www.w3.org/ns/did/v1",
+            "https://w3id.org/security/suites/ed25519-2020/v1",
+            "https://w3id.org/security/suites/x25519-2020/v1"
+        ],
+        "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+        "verificationMethod": [
+            {
+                "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#auth-key",
+                "type": "Ed25519VerificationKey2020",
+                "controller": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+                "publicKeyMultibase": "z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb"
+            },
+            {
+                "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#enc-key",
+                "type": "X25519KeyAgreementKey2020",
+                "controller": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+                "publicKeyMultibase": "z6LSmrTqdDxHJdefaTwcS5AHZ3o7qcQQuDpyioVESbUDB6LC"
+            }
+        ],
+        "authentication": [
+            "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#auth-key"
+        ],
+        "keyAgreement": [
+            "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#enc-key"
+        ],
+        "service": [
+            {
+                "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#didcomm",
+                "type": "DIDCommMessaging",
+                "serviceEndpoint": "https://example.com/didcomm",
+                "accept": [
+                    "didcomm/v2"
+                ]
+            }
+        ]
+    }
+```
+
+---
+
+## Contribute
+
+Thank you for your interest in contributing to this project! Please follow these steps:
+
+1. Fork the repository.
+2. Create a branch for your contribution:
+```bash
+git checkout -b your-branch-name
+```
+3. Make your changes and make sure the tests pass.
+4. Submit a pull request with a detailed description of your changes.
+
+### Reporting Issues
+
+If you encounter any issues, please open an issue in our repository.
+
+
+### Additional Notes:
+- Make sure to replace `your-username` and `your-repository` with the correct values ​​for your repository.
+- If you have unit tests or additional documentation, add specific sections for them.
 
