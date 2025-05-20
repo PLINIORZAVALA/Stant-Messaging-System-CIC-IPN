@@ -360,7 +360,7 @@ wget --method=POST \
   }' \
   http://localhost:5000/UpdateDID
 ```
-**Answer in verifySignedDID.json**
+**Answer in did_registry.json**
 ```json
 {
     "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb": {
