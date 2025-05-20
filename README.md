@@ -240,7 +240,7 @@ wget --method=GET \
 
 ```
 
-**Signature example:**
+### Signature example:
 1. **Navigate to the correct folder**:  
    ```bash
    cd pocDavid/walletTools
@@ -310,5 +310,29 @@ wget --method=GET \
 }
 
 ```
-6. s
+### VerifySignedDID
+**Endpoint:** `POST /VerifySignedDID`
+
+POST if a DID exists in the registry.
+
+**Parameters:**
+- `did`: The DID to verify.
+
+**Request example:**
+```
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "did": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+    "signature": "8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ=="
+  }' \
+  http://localhost:5000/VerifySignedDID   
+```
+**Answer in verifySignedDID.json**
+```json
+{
+  "DID": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+  "verified": true
+}
+```
 
