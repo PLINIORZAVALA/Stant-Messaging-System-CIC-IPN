@@ -239,3 +239,26 @@ wget --method=GET \
 }
 
 ```
+
+**Signature example:**
+1. **Navigate to the correct folder**:  
+   ```bash
+   cd pocDavid/walletTools
+   ```  
+2. **Grant execute permissions** (only once):  
+   ```bash
+   chmod +x signDID.sh
+   ```  
+3. **Signature **:
+   ```
+   ./ signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
+   ```
+   Example Singnature:
+   ```
+   ./signDID.sh -k MC4CAQAwBQYDK2VuBCIEINikrafvKpVBB+oePxHcuzPFiSE4N0SNiTrUKO/YySF4 -d did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb -o signature.txt
+   ```
+   Example Answer:
+   ```
+   8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ==
+   ```
+
