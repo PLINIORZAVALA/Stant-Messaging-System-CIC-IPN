@@ -124,12 +124,12 @@ wget --method=POST \
     "jwk_auth": {
       "kty": "OKP",
       "crv": "Ed25519",
-      "x": " z9yQ7eAiZg9DgSI9QhIDhkd3blOvFHmIo-Dqg0PHpZA"
+      "x": "z9yQ7eAiZg9DgSI9QhIDhkd3blOvFHmIo-Dqg0PHpZA"
     },
     "jwk_enc": {
       "kty": "OKP",
       "crv": "X25519",
-      "x": " lzeH6SSSyArkVUoEbTyif6xptkGtuoUUMit205-w0D0"
+      "x": "lzeH6SSSyArkVUoEbTyif6xptkGtuoUUMit205-w0D0"
     }
   }' \
   http://localhost:5000/CreateDID
