@@ -249,7 +249,7 @@ wget --method=GET \
    ```bash
    chmod +x signDID.sh
    ```  
-3. **Signature **:
+3. **Signature: **
    ```
    ./ signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
    ```
