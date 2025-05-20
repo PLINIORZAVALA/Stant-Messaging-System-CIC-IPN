@@ -263,7 +263,8 @@ wget --method=GET \
    ```
    8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ==
    ```
-4. **Answer in CreateDID.json**
+4. **Answer in CreateDID.json:**
+   
    This file serves as backup metadata or evidence of which DID and public keys were used when signing a message or document.
 ```json
 {
