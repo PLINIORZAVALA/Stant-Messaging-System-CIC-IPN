@@ -263,4 +263,51 @@ wget --method=GET \
    ```
    8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ==
    ```
+4. **Answer in CreateDID.json**
+   This file serves as backup metadata or evidence of which DID and public keys were used when signing a message or document.
+```json
+{
+  "DID": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+  "DID_Document": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/suites/ed25519-2020/v1",
+      "https://w3id.org/security/suites/x25519-2020/v1"
+    ],
+    "authentication": [
+      "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#auth-key"
+    ],
+    "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+    "keyAgreement": [
+      "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#enc-key"
+    ],
+    "service": [
+      {
+        "accept": [
+          "didcomm/v2"
+        ],
+        "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#didcomm",
+        "serviceEndpoint": "https://example.com/didcomm",
+        "type": "DIDCommMessaging"
+      }
+    ],
+    "verificationMethod": [
+      {
+        "controller": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+        "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#auth-key",
+        "publicKeyMultibase": "z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+        "type": "Ed25519VerificationKey2020"
+      },
+      {
+        "controller": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb",
+        "id": "did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb#enc-key",
+        "publicKeyMultibase": "z6LSmrTqdDxHJdefaTwcS5AHZ3o7qcQQuDpyioVESbUDB6LC",
+        "type": "X25519KeyAgreementKey2020"
+      }
+    ]
+  }
+}
+
+```
+6. s
 
