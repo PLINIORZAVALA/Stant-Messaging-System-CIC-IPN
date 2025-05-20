@@ -117,7 +117,7 @@ Follow these steps to generate the final structure:
 Creates a new DID and stores it in the registry. A public key in PEM format is required.
 
 **Request example:**
-```json
+```
 wget --method=POST \
   --header="Content-Type: application/json" \
   --body-data='{
