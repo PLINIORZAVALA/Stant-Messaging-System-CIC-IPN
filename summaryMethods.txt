@@ -1,0 +1,66 @@
+************************************************
+		CREATE DID
+************************************************
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "jwk_auth": {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "x": "2xh5OfLkJKTjMN3E_cWwGE-XkD0QwYxg5lZNU5HmuEM"
+    },
+    "jwk_enc": {
+      "kty": "OKP",
+      "crv": "X25519",
+      "x": "Z9wPDAU9uKVMXtdwV9rUmsR9yXiisufuYj10OXDcUVA"
+    }
+  }' \
+  http://localhost:5000/CreateDID
+************************************************
+		GET DID
+************************************************
+wget --method=GET \
+  --output-document=did_response.json \
+"http://localhost:5000/DIDRegistryGet?did=did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ"
+************************************************
+	     SIGNATURE DOCUMENT
+************************************************
+./ signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
+./signDID.sh -k ed25519_priv.pem -d did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ -o signature.txt
+
+************************************************
+	    VERIFY SIGNED DID
+************************************************
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "did": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
+    "signature": "0IzJ4PjB8UM6BJNipMH1gVlKXf+mDMzi1AIAiVNmSve5VA0zKHKXmdHiLbDypJCVUuIc1/BYhjFrTR4vip4SCw=="
+  }' \
+  http://localhost:5000/VerifySignedDID   
+************************************************
+	    UPDATE DOCUMENT
+************************************************
+wget --method=POST \
+  --header="Content-Type: application/json" \
+  --body-data='{
+    "did": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
+    "signature": "0IzJ4PjB8UM6BJNipMH1gVlKXf+mDMzi1AIAiVNmSve5VA0zKHKXmdHiLbDypJCVUuIc1/BYhjFrTR4vip4SCw==",
+    "updates": {
+      "credentialSubject": {
+        "id": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
+        "type": ["PermanentResident", "Person"],
+        "givenName": "JOHN",
+        "familyName": "SMITH",
+        "gender": "Male",
+        "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+        "residentSince": "2015-01-01",
+        "lprCategory": "C09",
+        "lprNumber": "000-000-204",
+        "commuterClassification": "C1",
+        "birthCountry": "Bahamas",
+        "birthDate": "1958-08-17"
+      }
+    }
+  }' \
+  http://localhost:5000/UpdateDID
