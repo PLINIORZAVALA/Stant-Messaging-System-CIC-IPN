@@ -257,7 +257,7 @@ wget --method=GET \
    ```
    Example Singnature:
    ```
-   ./signDID.sh -k MC4CAQAwBQYDK2VuBCIEINikrafvKpVBB+oePxHcuzPFiSE4N0SNiTrUKO/YySF4 -d did:key:z6MktSfWTatv5dUtfQjt3Q2WjsrWMJFcuqTGRumSgbKNaUzb -o signature.txt
+   ./signDID.sh -k MC4CAQAwBQYDK2VwBCIEIIkTE6gAJmUQEMqWHi1JxvaMYtMowwIRH7qizihZDfOL -d did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ -o signature.txt
    ```
    Example Answer:
    ```
