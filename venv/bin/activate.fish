@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/plinior/Stant-Messaging-System-CIC-IPN/venv
+set -gx VIRTUAL_ENV /home/plinior/cic/Stant-Messaging-System-CIC-IPN/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

@@ -1,4 +1,4 @@
-#!/home/plinior/Stant-Messaging-System-CIC-IPN/venv/bin/python3
+#!/home/plinior/cic/Stant-Messaging-System-CIC-IPN/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
