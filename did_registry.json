@@ -39,5 +39,115 @@
                 ]
             }
         ]
+    },
+    "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok": {
+        "@context": [
+            "https://www.w3.org/ns/did/v1",
+            "https://w3id.org/security/suites/ed25519-2020/v1",
+            "https://w3id.org/security/suites/x25519-2020/v1"
+        ],
+        "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+        "verificationMethod": [
+            {
+                "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok#auth-key",
+                "type": "Ed25519VerificationKey2020",
+                "controller": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+                "publicKeyMultibase": "z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok"
+            },
+            {
+                "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok#enc-key",
+                "type": "X25519KeyAgreementKey2020",
+                "controller": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+                "publicKeyMultibase": "z6LSttNdXCEXi9Nbh6kvwVKqM1wrnewU3jVej9bedBe8pQy4"
+            }
+        ],
+        "authentication": [
+            "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok#auth-key"
+        ],
+        "keyAgreement": [
+            "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok#enc-key"
+        ],
+        "service": [
+            {
+                "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok#didcomm",
+                "type": "DIDCommMessaging",
+                "serviceEndpoint": "https://example.com/didcomm",
+                "accept": [
+                    "didcomm/v2"
+                ]
+            }
+        ],
+        "credentialSubject": {
+            "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+            "type": [
+                "PermanentResident",
+                "Person"
+            ],
+            "givenName": "MAX",
+            "familyName": "PLINIOR",
+            "gender": "Male",
+            "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+            "residentSince": "2015-01-01",
+            "lprCategory": "C09",
+            "lprNumber": "000-000-204",
+            "commuterClassification": "C1",
+            "birthCountry": "Per\u00fa",
+            "birthDate": "1958-08-17"
+        }
+    },
+    "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT": {
+        "@context": [
+            "https://www.w3.org/ns/did/v1",
+            "https://w3id.org/security/suites/ed25519-2020/v1",
+            "https://w3id.org/security/suites/x25519-2020/v1"
+        ],
+        "id": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT",
+        "verificationMethod": [
+            {
+                "id": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT#auth-key",
+                "type": "Ed25519VerificationKey2020",
+                "controller": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT",
+                "publicKeyMultibase": "z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT"
+            },
+            {
+                "id": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT#enc-key",
+                "type": "X25519KeyAgreementKey2020",
+                "controller": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT",
+                "publicKeyMultibase": "z6LSp1KBvB7ty1Ga5NuN5ssRRjx4uXhvkTPdwbnzKQav4Kop"
+            }
+        ],
+        "authentication": [
+            "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT#auth-key"
+        ],
+        "keyAgreement": [
+            "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT#enc-key"
+        ],
+        "service": [
+            {
+                "id": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT#didcomm",
+                "type": "DIDCommMessaging",
+                "serviceEndpoint": "https://example.com/didcomm",
+                "accept": [
+                    "didcomm/v2"
+                ]
+            }
+        ],
+        "credentialSubject": {
+            "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+            "type": [
+                "PermanentResident",
+                "Person"
+            ],
+            "givenName": "Alex",
+            "familyName": "Lancho",
+            "gender": "Male",
+            "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+            "residentSince": "2015-01-01",
+            "lprCategory": "C09",
+            "lprNumber": "000-000-204",
+            "commuterClassification": "C1",
+            "birthCountry": "Per\u00fa",
+            "birthDate": "1958-08-17"
+        }
     }
 }

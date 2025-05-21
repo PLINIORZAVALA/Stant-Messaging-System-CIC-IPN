@@ -7,12 +7,12 @@ wget --method=POST \
     "jwk_auth": {
       "kty": "OKP",
       "crv": "Ed25519",
-      "x": "2xh5OfLkJKTjMN3E_cWwGE-XkD0QwYxg5lZNU5HmuEM"
+      "x": "sEfD1hDCn6xJdoHWVR9fSzgl7cdVCF1m8ZydGpoO7uM"
     },
     "jwk_enc": {
       "kty": "OKP",
       "crv": "X25519",
-      "x": "Z9wPDAU9uKVMXtdwV9rUmsR9yXiisufuYj10OXDcUVA"
+      "x": "_7acjJrrbJKPyEFQWs_1KhKH1NC_OmZo0MohBsJWlVc"
     }
   }' \
   http://localhost:5000/CreateDID
@@ -21,12 +21,12 @@ wget --method=POST \
 ************************************************
 wget --method=GET \
   --output-document=did_response.json \
-"http://localhost:5000/DIDRegistryGet?did=did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ"
+"http://localhost:5000/DIDRegistryGet?did=did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok"
 ************************************************
 	     SIGNATURE DOCUMENT
 ************************************************
 ./ signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
-./signDID.sh -k ed25519_priv.pem -d did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ -o signature.txt
+./signDID.sh -k ed25519_priv.pem -d did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok -o signature.txt
 
 ************************************************
 	    VERIFY SIGNED DID
@@ -34,8 +34,8 @@ wget --method=GET \
 wget --method=POST \
   --header="Content-Type: application/json" \
   --body-data='{
-    "did": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
-    "signature": "0IzJ4PjB8UM6BJNipMH1gVlKXf+mDMzi1AIAiVNmSve5VA0zKHKXmdHiLbDypJCVUuIc1/BYhjFrTR4vip4SCw=="
+    "did": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+    "signature": "4b0VwfMNTVxs7qizAWSr39XCEijdGVJ08a8KdkdHWsSHPbKifyedfnydnBMvRXHShy8+GVG3C8zGJHvC5j/MBg=="
   }' \
   http://localhost:5000/VerifySignedDID   
 ************************************************
@@ -44,21 +44,21 @@ wget --method=POST \
 wget --method=POST \
   --header="Content-Type: application/json" \
   --body-data='{
-    "did": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
-    "signature": "0IzJ4PjB8UM6BJNipMH1gVlKXf+mDMzi1AIAiVNmSve5VA0zKHKXmdHiLbDypJCVUuIc1/BYhjFrTR4vip4SCw==",
+    "did": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
+    "signature": "4b0VwfMNTVxs7qizAWSr39XCEijdGVJ08a8KdkdHWsSHPbKifyedfnydnBMvRXHShy8+GVG3C8zGJHvC5j/MBg==",
     "updates": {
       "credentialSubject": {
-        "id": "did:key:z6MkuCWyYtNs3Jw1QRN8E7F1uQvJuGJMDm3v9Q8rkoQ3PHPQ",
+        "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
         "type": ["PermanentResident", "Person"],
-        "givenName": "JOHN",
-        "familyName": "SMITH",
+        "givenName": "MAX",
+        "familyName": "PLINIOR",
         "gender": "Male",
         "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
         "residentSince": "2015-01-01",
         "lprCategory": "C09",
         "lprNumber": "000-000-204",
         "commuterClassification": "C1",
-        "birthCountry": "Bahamas",
+        "birthCountry": "Perú",
         "birthDate": "1958-08-17"
       }
     }
