@@ -7,12 +7,12 @@ wget --method=POST \
     "jwk_auth": {
       "kty": "OKP",
       "crv": "Ed25519",
-      "x": "sEfD1hDCn6xJdoHWVR9fSzgl7cdVCF1m8ZydGpoO7uM"
+      "x": "i_CbWFNXuWknwIh9kDRytGfFX_HQDTPfxk6nHzeWRP4"
     },
     "jwk_enc": {
       "kty": "OKP",
       "crv": "X25519",
-      "x": "_7acjJrrbJKPyEFQWs_1KhKH1NC_OmZo0MohBsJWlVc"
+      "x": "tzNZ7rO7K5T4CF6i9HfFCPwJVOJSdZtaUndcdronk0s"
     }
   }' \
   http://localhost:5000/CreateDID
@@ -21,12 +21,12 @@ wget --method=POST \
 ************************************************
 wget --method=GET \
   --output-document=did_response.json \
-"http://localhost:5000/DIDRegistryGet?did=did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok"
+"http://localhost:5000/DIDRegistryGet?did=did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT"
 ************************************************
 	     SIGNATURE DOCUMENT
 ************************************************
 ./ signDID.sh -k <privkey.pem> -d <DID> [-o <out_file>]
-./signDID.sh -k ed25519_priv.pem -d did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok -o signature.txt
+./signDID.sh -k ed25519_priv.pem -d did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT -o signature.txt
 
 ************************************************
 	    VERIFY SIGNED DID
@@ -34,8 +34,8 @@ wget --method=GET \
 wget --method=POST \
   --header="Content-Type: application/json" \
   --body-data='{
-    "did": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
-    "signature": "4b0VwfMNTVxs7qizAWSr39XCEijdGVJ08a8KdkdHWsSHPbKifyedfnydnBMvRXHShy8+GVG3C8zGJHvC5j/MBg=="
+    "did": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT",
+    "signature": "K68+gVTczs1Uoz/lERAmJHT6LmDUOwJt/EUid3Dr4ndMpyVGI5i97/50x9c0tBZS1Cf0/veN3g65LVPQvvUMAw=="
   }' \
   http://localhost:5000/VerifySignedDID   
 ************************************************
@@ -44,14 +44,14 @@ wget --method=POST \
 wget --method=POST \
   --header="Content-Type: application/json" \
   --body-data='{
-    "did": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
-    "signature": "4b0VwfMNTVxs7qizAWSr39XCEijdGVJ08a8KdkdHWsSHPbKifyedfnydnBMvRXHShy8+GVG3C8zGJHvC5j/MBg==",
+    "did": "did:key:z6MkosXWVjEAhTJkSWkro7LyF1vAeNhnCFYWBwH86dFrXGuT",
+    "signature": "K68+gVTczs1Uoz/lERAmJHT6LmDUOwJt/EUid3Dr4ndMpyVGI5i97/50x9c0tBZS1Cf0/veN3g65LVPQvvUMAw==",
     "updates": {
       "credentialSubject": {
         "id": "did:key:z6MkrKPGbCGK3GUJZe1n1iAYNNgc3DszyuebyrnGYVsz6eok",
         "type": ["PermanentResident", "Person"],
-        "givenName": "MAX",
-        "familyName": "PLINIOR",
+        "givenName": "Alex",
+        "familyName": "Lancho",
         "gender": "Male",
         "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
         "residentSince": "2015-01-01",

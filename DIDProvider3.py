@@ -1,10 +1,16 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 import uuid
 import json
 import os
 import base64
 import base58
+import zipfile
+import io
+import subprocess
+import tempfile
+import logging
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+from pathlib import Path
 
 app = Flask(__name__)
 DID_REGISTRY_FILE = 'did_registry.json'
@@ -36,6 +42,102 @@ def verify_ed25519_signature(public_mb: str, signature_b64: str, message: bytes)
     pub_key = Ed25519PublicKey.from_public_bytes(raw_pk)
     sig = base64.b64decode(signature_b64)
     pub_key.verify(sig, message)
+
+# Configura logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
+# Configuración exacta basada en tu estructura
+BASE_DIR = os.path.expanduser("~/cic/Stant-Messaging-System-CIC-IPN")
+WALLET_TOOLS_PATH = os.path.join(BASE_DIR, "walletTools")
+GENERATE_SCRIPT = os.path.join(WALLET_TOOLS_PATH, "generateKeys.sh")
+
+def run_shell_command(command, cwd=None):
+    """Ejecuta un comando de shell con logging detallado"""
+    try:
+        logger.info(f"Ejecutando: {command} en {cwd}")
+        result = subprocess.run(
+            command,
+            cwd=cwd,
+            shell=True,
+            check=True,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE
+        )
+        logger.info(f"Resultado:\n{result.stdout}")
+        return True, result.stdout
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Error al ejecutar '{command}':\n{e.stderr}")
+        return False, e.stderr
+
+@app.route('/api/generate-keys', methods=['POST'])
+def generate_keys():
+    try:
+        logger.info("Iniciando generación de claves...")
+        
+        # Paso 1: Navegar al directorio (no necesario en subprocess.run con cwd)
+        logger.info(f"Accediendo a directorio: {WALLET_TOOLS_PATH}")
+        if not os.path.exists(WALLET_TOOLS_PATH):
+            raise FileNotFoundError(f"Directorio no encontrado: {WALLET_TOOLS_PATH}")
+
+        # Paso 2: Dar permisos de ejecución (solo si no los tiene)
+        if not os.access(GENERATE_SCRIPT, os.X_OK):
+            logger.info("Otorgando permisos de ejecución...")
+            success, output = run_shell_command(f"chmod +x {GENERATE_SCRIPT}", WALLET_TOOLS_PATH)
+            if not success:
+                raise PermissionError(f"No se pudo dar permisos: {output}")
+
+        # Paso 3: Ejecutar el script
+        logger.info("Ejecutando script de generación...")
+        success, output = run_shell_command(f"./{os.path.basename(GENERATE_SCRIPT)}", WALLET_TOOLS_PATH)
+        if not success:
+            raise RuntimeError(f"Error en generación: {output}")
+
+        # Verificar archivos generados
+        EXPECTED_FILES = [
+            'ed25519.jwk', 'ed25519_priv.pem', 'ed25519_pub.pem',
+            'x25519.jwk', 'x25519_priv.pem', 'x25519_pub.pem'
+        ]
+        
+        missing_files = []
+        zip_buffer = io.BytesIO()
+        
+        with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            for filename in EXPECTED_FILES:
+                file_path = os.path.join(WALLET_TOOLS_PATH, filename)
+                if os.path.exists(file_path):
+                    zipf.write(file_path, filename)
+                    logger.info(f"Archivo añadido: {filename}")
+                else:
+                    missing_files.append(filename)
+                    logger.warning(f"Archivo faltante: {filename}")
+
+        if missing_files:
+            raise FileNotFoundError(f"Archivos no generados: {', '.join(missing_files)}")
+
+        zip_buffer.seek(0)
+        logger.info("Generación completada exitosamente")
+        
+        return send_file(
+            zip_buffer,
+            mimetype='application/zip',
+            as_attachment=True,
+            download_name='did_keys.zip'
+        )
+
+    except Exception as e:
+        logger.error(f"Error en el proceso: {str(e)}", exc_info=True)
+        return jsonify({
+            "error": str(e),
+            "steps": {
+                "directory": WALLET_TOOLS_PATH,
+                "script": GENERATE_SCRIPT,
+                "files_in_directory": os.listdir(WALLET_TOOLS_PATH) if os.path.exists(WALLET_TOOLS_PATH) else None
+            }
+        }), 500
+
 
 @app.route('/CreateDID', methods=['POST'])
 def create_did():
