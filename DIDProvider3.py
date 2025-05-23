@@ -11,8 +11,23 @@ import tempfile
 import logging
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
 from pathlib import Path
+from flask_cors import CORS # type: ignore
 
 app = Flask(__name__)
+# Configuración de CORS para todas las rutas
+CORS(app)
+
+# Configuración PROBADA de CORS
+CORS(app, resources={
+    r"/VerifyDID": {
+        "origins": ["http://localhost:8000", "http://127.0.0.1:8000"],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"],
+        "supports_credentials": True,
+        "max_age": 600
+    }
+})
+
 DID_REGISTRY_FILE = 'did_registry.json'
 
 # Carga o inicializa el registro de DID Documents
