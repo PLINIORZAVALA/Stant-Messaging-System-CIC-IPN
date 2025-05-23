@@ -263,8 +263,6 @@ wget --method=GET \
    ```
    8Zb6iM2ysBAxiIstjX1USJWKvldzAwM7lP9IqY9kurWagEnT3UJHcG3lrZMCCic5B8vX4mvSwnxDLjaeQPjpAQ==
    ```
-
-```
 ### VerifySignedDID
 **Endpoint:** `POST /VerifySignedDID`
 
