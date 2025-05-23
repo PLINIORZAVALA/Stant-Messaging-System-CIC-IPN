@@ -9,9 +9,12 @@ import io
 import subprocess
 import tempfile
 import logging
+from pathlib import Path
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
 from pathlib import Path
 from flask_cors import CORS # type: ignore
+import traceback
+import time
 
 app = Flask(__name__)
 # Configuración de CORS para todas las rutas
@@ -230,6 +233,84 @@ def get_did_registry():
     if not did or did not in did_registry:
         return jsonify({'error': 'DID no encontrado'}), 404
     return jsonify({'DID_Document': did_registry[did]}), 200
+
+@app.route('/api/sign-did', methods=['POST'])
+def sign_did():
+    """Endpoint para firmar DIDs usando signDID.sh"""
+    try:
+        # 1. Validar entrada
+        data = request.get_json()
+        if not data or not data.get('did'):
+            return jsonify({'error': 'Se requiere el campo "did"'}), 400
+
+        # 2. Configurar rutas (igual que para generateKeys)
+        BASE_DIR = os.path.expanduser("~/cic/Stant-Messaging-System-CIC-IPN")
+        WALLET_TOOLS_PATH = os.path.join(BASE_DIR, "walletTools")
+        SIGN_SCRIPT = os.path.join(WALLET_TOOLS_PATH, "signDID.sh")
+        OUTPUT_FILE = os.path.join(WALLET_TOOLS_PATH, f"signature_{int(time.time())}.txt")
+
+        # 3. Validar existencia de recursos
+        if not os.path.exists(SIGN_SCRIPT):
+            return jsonify({
+                'error': 'Script de firma no encontrado',
+                'path': SIGN_SCRIPT,
+                'solution': 'Verifique que signDID.sh esté en walletTools/'
+            }), 404
+
+        # 4. Dar permisos (idempotente)
+        os.chmod(SIGN_SCRIPT, 0o755)
+
+        # 5. Ejecutar comando de firma
+        cmd = [
+            './signDID.sh',
+            '-k', data.get('priv_key', 'ed25519_priv.pem'),
+            '-d', data['did'],
+            '-o', OUTPUT_FILE
+        ]
+        
+        result = subprocess.run(
+            cmd,
+            cwd=WALLET_TOOLS_PATH,
+            capture_output=True,
+            text=True
+        )
+
+        # 6. Manejar errores del script
+        if result.returncode != 0:
+            return jsonify({
+                'error': 'Error al ejecutar script de firma',
+                'details': {
+                    'returncode': result.returncode,
+                    'stderr': result.stderr,
+                    'cmd': ' '.join(cmd),
+                    'working_dir': WALLET_TOOLS_PATH
+                }
+            }), 500
+
+        # 7. Leer y devolver firma
+        with open(OUTPUT_FILE, 'r') as f:
+            signature = f.read().strip()
+
+        # 8. Limpieza
+        os.remove(OUTPUT_FILE)
+
+        return jsonify({
+            'status': 'success',
+            'signature': signature,
+            'metadata': {
+                'did': data['did'],
+                'algorithm': 'Ed25519',
+                'signed_at': int(time.time())
+            }
+        })
+
+    except Exception as e:
+        return jsonify({
+            'error': 'Error interno',
+            'details': str(e)
+        }), 500
+
+
 
 @app.route('/VerifySignedDID', methods=['POST'])
 def verify_signed_did():
